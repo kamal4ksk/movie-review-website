@@ -289,3 +289,45 @@ input[type="submit"]:hover {
   }
 }
 
+/* Creator section */
+.creator{
+    text-align:center;
+    margin-top:40px;
+    font-size:18px;
+    color:white;
+}
+
+.creator span{
+    color:#00bfff;
+    font-weight:bold;
+}
+
+.creator a{
+    color:#00bfff;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.creator a:hover{
+    text-decoration:underline;
+}
+
+/* Thank you section */
+.thank-you{
+    text-align:center;
+    padding:40px;
+    margin-top:20px;
+    background:linear-gradient(90deg,#111,#222,#111);
+    border-top:2px solid #00bfff;
+}
+
+.thank-you h2{
+    font-size:28px;
+    color:#00bfff;
+    margin-bottom:10px;
+}
+
+.thank-you p{
+    font-size:18px;
+    color:white;
+}

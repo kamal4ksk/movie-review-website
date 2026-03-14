@@ -455,4 +455,20 @@ footer a:hover{
 }
 footer a{
   text-decoration: none;
+  
+}
+.creator-credit{
+    font-size:14px;
+    color:#ccc;
+    margin-top:5px;
+}
+
+.creator-credit a{
+    color:#05017d;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.creator-credit a:hover{
+    color: rgb(0, 4, 8);
 }
