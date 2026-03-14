@@ -1,10 +1,14 @@
 *{
-    padding: 0px; margin: 0px;box-sizing: border-box; font-family: sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins", sans-serif;
 }
+
 
 header{
     width: 100%;
-    height: 100vh;
+   
 
 }
 .logo{
@@ -29,6 +33,10 @@ nav{
     align-items: center;
     box-shadow: 2px 0px 5px gray;
     background-color: rgb(30, 84, 153);
+     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 .home a{
     text-decoration: none;
@@ -130,22 +138,17 @@ margin-right: 40%;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
+
 body{
-  background-image: url(wall_e.jpg.jpg);
+  background-image: url("wall_e.jpg.jpg");
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
- 
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding-top:110px;
 }
+
+
 ::selection{
   color: #fff;
   background: #5372F0;

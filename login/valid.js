@@ -27,15 +27,23 @@ form.onsubmit = (e)=>{
       eField.classList.add("valid");
     }
   }
-  function checkPass(){ //checkPass function
-    if(pInput.value == ""){ //if pass is empty then add error and remove valid class
-      pField.classList.add("error");
-      pField.classList.remove("valid");
-    }else{ //if pass is empty then remove error and add valid class
-      pField.classList.remove("error");
-      pField.classList.add("valid");
-    }
+ function checkPass(){ //checkPass function
+  if(pInput.value == ""){ 
+    pField.classList.add("error","shake");
+    pField.classList.remove("valid");
   }
+  else if(pInput.value.length < 6){ //password less than 6
+    pField.classList.add("error","shake");
+    pField.classList.remove("valid");
+    let errorTxt = pField.querySelector(".error-txt");
+    errorTxt.innerText = "Password must be at least 6 characters";
+  }
+  else{ 
+    pField.classList.remove("error","shake");
+    pField.classList.add("valid");
+  }
+}
+
   //if eField and pField doesn't contains error class that mean user filled details properly
   if(!eField.classList.contains("error") && !pField.classList.contains("error")){
     window.location.href = form.getAttribute("action"); //redirecting user to the specified url which is inside action attribute of form tag

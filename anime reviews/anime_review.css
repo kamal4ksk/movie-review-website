@@ -6,7 +6,7 @@
 }
 header{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 
 }
 .logo{
@@ -193,207 +193,88 @@ input[type="submit"]:hover {
   color: black;
 }
 
-/*contents*/
-h3{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-left: 30px;
-  margin-top: 15px;
-  color: aliceblue;
+/*contents*//* ===== ANIME REVIEW CONTENT LAYOUT ===== */
+
+.frozen,
+.coco,
+.moana,
+.rise{
+  display:flex;
+  align-items:flex-start;
+  gap:60px;
+  margin:100px 60px;
 }
 
+/* images */
 
- 
-.frozen img{
-    height: 550px;
-    width: 900px;
-    margin: 80px 120px;
-    border-radius: 8px;
-    box-shadow: 8px 8px 15px;
-    margin-top: 100px;
-    text-align: center;
-    position: relative;
-    
-  }
-  .textfro{
-    position: absolute;
-    bottom: 70px;
-    left: 1060px;
-    color: white;
-   font-size: 20px; 
-  }
-  .textfroz{
-    position: absolute;
-    bottom: -30px;
-    left: 60px;
-    color: white;
-   font-size: 20px; 
-  }
+.frozen img,
+.coco img,
+.moana img,
+.rise img{
+  height:550px;
+  width:900px;
+  border-radius:8px;
+  box-shadow:8px 8px 15px black;
+}
 
-  
-  .parafro{
-    position: absolute;
-   left: 0px;
-    color: white;
-   font-size: 18px; 
-    
-  }
+/* text beside images */
 
-  .coco img{
-    height: 550px;
-    width: 900px;
-    margin: 80px 120px;
-    border-radius: 8px;
-    box-shadow: 8px 8px 15px;
-    margin-top: 100px;
-    text-align: center;
-    position: relative;
-    top: 400px;
-  }
-  .textcoco{
-    position: absolute;
-    bottom:-1050px;
-    left: 1050px;
-    color: white;
-   font-size: 20px; 
-  }
-  .textco{
-    position: absolute;
-    bottom: -30px;
-    left: 60px;
-    color: white;
-   font-size: 20px; 
-  }
- 
-  
-  .paracoco{
-    position: absolute;
-    top: 2100px;
-    left: 0px;
-    color: white;
-   font-size: 20px; 
-  }
- 
+.textfro,
+.textcoco,
+.textmoana,
+.textrise{
+  color:white;
+  font-size:20px;
+  max-width:420px;
+}
 
-  .moana img{
-    height: 550px;
-    width: 900px;
-    margin: 80px 120px;
-    border-radius: 8px;
-    box-shadow: 8px 8px 15px;
-    margin-top: 100px;
-    text-align: center;
-    position: relative;
-    top: 950px;
-  }
-  .textmoana{
-    position: absolute;
-    bottom:-2330px;
-    left: 1050px;
-    color: white;
-   font-size: 20px; 
-  }
-  .textmoa{
-    position: absolute;
-    bottom: -30px;
-    left: 60px;
-    color: white;
-   font-size: 20px; 
-  }
-  
-  .paramo{
-    position: absolute;
-    width: 1500px;
-    top: 3350px;
-   left: 0px;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-  }
+/* rating text */
 
-  .rise img{
-    height: 550px;
-    width: 900px;
-    margin: 80px 120px;
-    border-radius: 8px;
-    box-shadow: 8px 8px 15px;
-    margin-top: 100px;
-    text-align: center;
-    position: relative;
-    top: 1250px;
-  }
-  .textrise{
-    position: absolute;
-    bottom:-3400px;
-    left: 1040px;
-    color: white;
-   font-size: 20px; 
-  }
-  .textri{
-    position: absolute;
-    bottom: -30px;
-    left: 60px;
-    color: white;
-   font-size: 20px; 
-  }
-  
-  .pararise{
-    position: absolute;
-    width: 1510px;
-    top: 4400px;
-   left: 0px;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-  }
- 
-  .star-wrapper {
-   
-    transform: translate(-50%, -50%);
-    position: relative;
-    direction: rtl;
-    right: -25px;
+.textfroz,
+.textco,
+.textmoa,
+.textri{
+  margin-top:10px;
+  font-size:20px;
+}
 
-  }
- 
-  .star-wrapper a {
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    transition: all 0.5s;
-    margin: 4px;
-    background-color: black;
+/* description paragraphs */
 
-  }
-  .star-wrapper a:hover {
-    color: gold;
-    transform: scale(1.3);
-  }
-  .s1:hover ~ a {
-    color: gold;
-  }
-  .s2:hover ~ a {
-    color: gold;
-  }
-  .s3:hover ~ a {
-    color: gold;
-  }
-  .s4:hover ~ a {
-    color: gold;
-  }
-  .s5:hover ~ a {
-    color: gold;
-  }
-  .wraper {
-    position: absolute;
-    bottom: 30px;
-    right: 50px;
-  }
+.parafro,
+.paracoco,
+.paramo,
+.pararise{
+  margin:40px 60px 80px 60px;
+  color:white;
+  font-size:18px;
+  line-height:1.6;
+}
+
+/* stars */
+
+.star-wrapper{
+  margin-top:15px;
+}
+
+.star-wrapper a{
+  font-size:20px;
+  color:white;
+  margin:4px;
+  transition:0.3s;
+}
+
+.star-wrapper a:hover{
+  color:gold;
+  transform:scale(1.3);
+}
 
   
 
-  footer {
-    width:100%;
-    position: absolute;
-    top:4650px;
-  }
+  footer{
+  width:100%;
+  position:relative;
+  margin-top:120px;
+}
   footer div {
     background-color: var(--col-deepblue);
     margin: -5px 0px 0px 0px;
