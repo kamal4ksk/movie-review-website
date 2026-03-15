@@ -1,1 +1,1 @@
-link : https://movie-review-website-ten.vercel.app
+link : https://movie-review-website-ten.vercel.app/
